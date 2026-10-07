@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Internship Project — Resume / Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">My Portfolio</a>
+
+      <!-- Hamburger button (mobile) -->
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#admin">Admin</a></li>
+      </ul>
+
+      <!-- Theme toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Home ===== -->
+    <section id="home" class="section home-section">
+      <div class="container home-content">
+        <h1>Hi, I'm Ezhilarasi</h1>
+        <p class="subtitle">Web Development Intern &amp; Aspiring Developer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn btn-outline">View My Work</a>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a student and a web development intern passionate about building
+              clean, responsive websites. I enjoy learning new front-end skills and
+              turning ideas into simple, working pages.
+            </p>
+            <p>
+              This portfolio is part of my web development internship project. It was
+              built using HTML5, CSS3, and vanilla JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Degree / Course Name</h3>
+            <p class="muted">College / University Name</p>
+            <p>Year: 2024 – 2028</p>
+            <p>Short description of the course or degree.</p>
+          </article>
+          <article class="card">
+            <h3>Higher Secondary (12th)</h3>
+            <p class="muted">School Name</p>
+            <p>Year: 20xx</p>
+            <p>Short description of your schooling.</p>
+          </article>
+          <article class="card">
+            <h3>Secondary (10th)</h3>
+            <p class="muted">School Name</p>
+            <p>Year: 20XX</p>
+            <p>Short description of your schooling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML5</div>
+          <div class="skill-item">CSS3</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Git &amp; GitHub</div>
+          <div class="skill-item">Responsive Design</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Resume / Portfolio Website</h3>
+            <p>Personal portfolio built with HTML, CSS and JavaScript.</p>
+          </article>
+          <article class="card">
+            <h3>React Contact Cards</h3>
+            <p>A simple React app to create and display contact cards.</p>
+          </article>
+          <article class="card">
+            <h3>React Like Card</h3>
+            <p>A small React app using useState to like and unlike cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Resume ===== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <p>You can download my resume below.</p>
+        <!-- Replace the href with your actual resume file (e.g. resume.pdf in the same folder) -->
+        <a href="#" class="btn" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- ===== Contact Me ===== -->
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formSuccess" class="success-msg" role="status" hidden>Thank you! Your message has been saved.</p>
+          <p id="formError" class="error-msg" role="alert" hidden>Please fill in all fields correctly.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Admin Login / Responses ===== -->
+    <section id="admin" class="section">
+      <div class="container">
+        <h2 class="section-title">Admin</h2>
+
+        <!-- Admin login form -->
+        <div id="adminLoginWrap">
+          <form id="adminLoginForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="adminUser">Username</label>
+              <input type="text" id="adminUser" name="adminUser" required />
+            </div>
+            <div class="form-group">
+              <label for="adminPass">Password</label>
+              <input type="password" id="adminPass" name="adminPass" required />
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p id="adminError" class="error-msg" role="alert" hidden>Incorrect username or password.</p>
+            <p class="muted small">Demo credentials — username: <strong>admin</strong>, password: <strong>admin123</strong></p>
+          </form>
+        </div>
+
+        <!-- Responses section (shown after login) -->
+        <div id="adminResponsesWrap" hidden>
+          <div class="responses-header">
+            <h3>User Responses</h3>
+            <button id="logoutBtn" class="btn btn-outline">Logout</button>
+          </div>
+          <div id="responsesList" class="responses-list">
+            <!-- responses injected here by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 [Your Name]. Web Development Internship Project.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
