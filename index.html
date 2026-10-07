@@ -6,16 +6,15 @@
   <title>Web Development Internship Project — Resume / Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
 </head>
 <body>
   <!-- ===== Header / Navigation ===== -->
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
-      <a href="#home" class="logo">My Portfolio</a>
+      <a href="#home" class="logo">Ezhilarasi</a>
 
-      <!-- Hamburger button (mobile) -->
       <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
@@ -33,7 +32,6 @@
         <li><a href="#admin">Admin</a></li>
       </ul>
 
-      <!-- Theme toggle -->
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark theme">
         <span id="themeIcon">🌙</span>
       </button>
@@ -77,22 +75,24 @@
         <h2 class="section-title">Education</h2>
         <div class="cards-grid">
           <article class="card">
-            <h3>Degree / Course Name</h3>
-            <p class="muted">College / University Name</p>
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="muted">Coimbatore Institute of Engineering and Technology (CIET)</p>
             <p>Year: 2024 – 2028</p>
-            <p>Short description of the course or degree.</p>
+            <p>Currently pursuing B.E. Computer Science and Engineering.</p>
           </article>
+
           <article class="card">
             <h3>Higher Secondary (12th)</h3>
-            <p class="muted">School Name</p>
-            <p>Year: 20xx</p>
-            <p>Short description of your schooling.</p>
+            <p class="muted">IVL Matric Hr. Sec. School</p>
+            <p>Year: 2024</p>
+            <p>Completed Higher Secondary education.</p>
           </article>
+
           <article class="card">
             <h3>Secondary (10th)</h3>
-            <p class="muted">School Name</p>
-            <p>Year: 20XX</p>
-            <p>Short description of your schooling.</p>
+            <p class="muted">IVL Matric Hr. Sec. School</p>
+            <p>Year: 2022</p>
+            <p>Completed Secondary education.</p>
           </article>
         </div>
       </div>
@@ -122,10 +122,12 @@
             <h3>Resume / Portfolio Website</h3>
             <p>Personal portfolio built with HTML, CSS and JavaScript.</p>
           </article>
+
           <article class="card">
             <h3>React Contact Cards</h3>
             <p>A simple React app to create and display contact cards.</p>
           </article>
+
           <article class="card">
             <h3>React Like Card</h3>
             <p>A small React app using useState to like and unlike cards.</p>
@@ -139,7 +141,6 @@
       <div class="container">
         <h2 class="section-title">Resume</h2>
         <p>You can download my resume below.</p>
-        <!-- Replace the href with your actual resume file (e.g. resume.pdf in the same folder) -->
         <a href="#" class="btn" download>Download Resume</a>
       </div>
     </section>
@@ -181,31 +182,35 @@
       <div class="container">
         <h2 class="section-title">Admin</h2>
 
-        <!-- Admin login form -->
         <div id="adminLoginWrap">
           <form id="adminLoginForm" class="contact-form" novalidate>
             <div class="form-group">
               <label for="adminUser">Username</label>
               <input type="text" id="adminUser" name="adminUser" required />
             </div>
+
             <div class="form-group">
               <label for="adminPass">Password</label>
               <input type="password" id="adminPass" name="adminPass" required />
             </div>
+
             <button type="submit" class="btn">Login</button>
+
             <p id="adminError" class="error-msg" role="alert" hidden>Incorrect username or password.</p>
-            <p class="muted small">Demo credentials — username: <strong>admin</strong>, password: <strong>admin123</strong></p>
+
+            <p class="muted small">
+              Demo credentials — username: <strong>admin</strong>, password: <strong>admin123</strong>
+            </p>
           </form>
         </div>
 
-        <!-- Responses section (shown after login) -->
         <div id="adminResponsesWrap" hidden>
           <div class="responses-header">
             <h3>User Responses</h3>
             <button id="logoutBtn" class="btn btn-outline">Logout</button>
           </div>
+
           <div id="responsesList" class="responses-list">
-            <!-- responses injected here by JavaScript -->
           </div>
         </div>
       </div>
@@ -215,7 +220,7 @@
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 [Your Name]. Web Development Internship Project.</p>
+      <p>&copy; 2026 Ezhilarasi. Web Development Internship Project.</p>
     </div>
   </footer>
 
